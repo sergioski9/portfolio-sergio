@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar'
 import Presentation from './components/Presentation'
 import About from './components/About'
+import Skills from './components/Skills'
 import imgHome from './media/images/developer.png'
 import imgSergio from './media/images/sergio.jpeg'
 import './App.css'
@@ -28,6 +29,17 @@ function App() {
       />
       <About
         imgPath={imgSergio}
+        githubPath={'https://github.com/sergioski9'}
+        linkedinPath={'https://www.linkedin.com/in/sergio-rodas-cruz-405762235/'}
+        email={'sergiorodascruz@gmail.com'}
+        nameProfile={'Sergio Rodas'}
+        aboutTitle={'About'}
+        aboutSubTitle={'Esto es un subtitulo donde ponder mas adelante'}
+        aboutDescriptionPrimary={description}
+        aboutDescriptionSecondary={description}
+      />
+      <Skills
+
       />
     </div>
   )

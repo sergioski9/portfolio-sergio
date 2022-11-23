@@ -1,15 +1,31 @@
-.about-container-background {
-  background-image: url('./../../media/images/waveAbout.png');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  width: 100%;
+.about-background-wave {
+  --size: 50px;
+  --p: 25px;
+  --R: 55.9px
+    /*sqrt(var(--size)*var(--size) + var(--p)*var(--p))*/
+  ;
+
   height: 100%;
-  padding: 5rem 3rem;
-  margin-top: 4rem;
+  width: 100%;
+  margin-top: 5rem;
+  padding: 7rem 2.3rem;
+
+  mask:
+    radial-gradient(var(--R) at left 50% bottom calc(var(--size) + var(--p)), #000 99%, #0000 101%) left calc(50% - 2*var(--size)) bottom 0/calc(4*var(--size)) 51% repeat-x,
+    radial-gradient(var(--R) at left 50% bottom calc(-1*var(--p)), #0000 99%, #000 101%) left 50% bottom var(--size)/calc(4*var(--size)) calc(51% - var(--size)) repeat-x,
+    radial-gradient(var(--R) at left 50% top calc(var(--size) + var(--p)), #000 99%, #0000 101%) left calc(50% - 2*var(--size)) top 0/calc(4*var(--size)) 51% repeat-x,
+    radial-gradient(var(--R) at left 50% top calc(-1*var(--p)), #0000 99%, #000 101%) left 50% top var(--size)/calc(4*var(--size)) calc(51% - var(--size)) repeat-x;
+  background-color: #33425B;
+  border: none;
+}
+
+.about-background-wave+.about-background-wave {
+  --d: bottom;
 }
 
 .about-container-profile {
   padding-left: 3.7rem;
+  margin: 0 auto;
 }
 
 .about-border-profile {
@@ -32,5 +48,41 @@
 
 .about-social-links {
   margin-top: 1.3rem;
-  padding-left: 0.6rem;
+}
+
+.about-button-social {
+  border: none;
+  background: transparent;
+  color: #FF731F;
+}
+
+.about-button-social:focus {
+  outline: none;
+}
+
+.about-container-info {
+  margin: 3rem 0;
+}
+
+.about-title-text {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.about-sub-title-text {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  color: white;
+  font-weight: 500;
+}
+
+.about-description-text {
+  color: rgb(176, 173, 173)
+}
+
+.about-description-text-secondary {
+  margin-top: 1.7rem;
+  margin-bottom: 1rem;
+  color: rgb(176, 173, 173)
 }
