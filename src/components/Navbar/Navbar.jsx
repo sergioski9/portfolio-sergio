@@ -2,8 +2,7 @@ import NavbarMobile from './NavbarMobile'
 import NavbarDestokp from './NavbarDestokp'
 import './Navbar.css'
 
-function Navbar({ nameLogo, aboutPath, skillsPath, servicePath,
-  projectsPath, contactPath, homePath }) {
+function Navbar({ nameLogo, contactPath, homePath, dataNavbarLinks }) {
 
   return (
     <div className='container-navbar' id='home'>
@@ -12,20 +11,15 @@ function Navbar({ nameLogo, aboutPath, skillsPath, servicePath,
           <ul className='navbar-info'>
             <NavbarDestokp
               nameLogo={nameLogo}
-              aboutPath={aboutPath}
-              servicePath={servicePath}
-              skillsPath={skillsPath}
-              projectsPath={projectsPath}
               contactPath={contactPath}
               homePath={homePath}
+              dataNavbarLinks={dataNavbarLinks}
             />
             <NavbarMobile
               nameLogo={nameLogo}
-              aboutPath={aboutPath}
-              servicePath={servicePath}
-              skillsPath={skillsPath}
-              projectsPath={projectsPath}
               contactPath={contactPath}
+              homePath={homePath}
+              dataNavbarLinks={dataNavbarLinks}
             />
           </ul>
         </nav>

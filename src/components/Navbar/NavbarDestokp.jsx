@@ -4,8 +4,7 @@ import NavbarButton from './NavbarButton'
 import NavbarLink from './NavbarLink'
 import './Navbar.css'
 
-function NavbarDestokp({ nameLogo, homePath, aboutPath, skillsPath, projectsPath,
-  servicePath, contactPath }) {
+function NavbarDestokp({ nameLogo, homePath, contactPath, dataNavbarLinks }) {
 
   return (
     <div className='navbar-destokp'>
@@ -14,26 +13,18 @@ function NavbarDestokp({ nameLogo, homePath, aboutPath, skillsPath, projectsPath
           name={nameLogo}
           path={homePath}
         />
-        <NavbarLink
-          name={'About'}
-          path={aboutPath}
-          className={'col-1'}
-        />
-        <NavbarLink
-          name={'Skilss'}
-          path={skillsPath}
-          className={'col-1'}
-        />
-        <NavbarLink
-          name={'Projects'}
-          path={projectsPath}
-          className={'col-1'}
-        />
-        <NavbarLink
-          name={'Service'}
-          path={servicePath}
-          className={'col-1'}
-        />
+        {
+          dataNavbarLinks && dataNavbarLinks.map((data, index) => {
+            return (
+              <NavbarLink
+                key={index + 1}
+                name={data.name}
+                path={data.path}
+                className={'col-1'}
+              />
+            )
+          })
+        }
         <NavbarButton
           id='navbar-link-contact'
           name={'Contact'}
