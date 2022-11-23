@@ -1,5 +1,6 @@
 import AboutInfo from './AboutInfo'
 import AboutProfile from './AboutProfile'
+import Wave from './../Wave'
 import './About.css'
 
 function About({ imgPath, email, linkedinPath, githubPath, nameProfile,
@@ -7,7 +8,7 @@ function About({ imgPath, email, linkedinPath, githubPath, nameProfile,
   aboutDescriptionSecondary }) {
 
   return (
-    <div className='about-background-wave'>
+    <Wave>
       <div className='row justify-content-center'>
         <AboutProfile
           imgPath={imgPath}
@@ -23,7 +24,7 @@ function About({ imgPath, email, linkedinPath, githubPath, nameProfile,
           aboutDescriptionSecondary={aboutDescriptionSecondary}
         />
       </div>
-    </div>
+    </Wave>
   )
 }
 

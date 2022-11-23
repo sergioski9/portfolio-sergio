@@ -5,8 +5,7 @@ import NavbarButton from './NavbarButton'
 import NavbarLink from './NavbarLink'
 import './Navbar.css'
 
-function NavbarMobile({ nameLogo, aboutPath, skillsPath, projectsPath,
-  servicePath, contactPath }) {
+function NavbarMobile({ nameLogo, homePath, dataNavbarLinks, contactPath }) {
   const [showMenu, setShowMenu] = useState(false)
 
   const toggle = () => {
@@ -20,36 +19,26 @@ function NavbarMobile({ nameLogo, aboutPath, skillsPath, projectsPath,
       <div hidden={showMenu} className='navbar-container-logo-mobile row justify-content-between'>
         <NavbarLogoMobile
           name={nameLogo}
+          path={homePath}
         />
         <NavbarLogoMenuMobile
           toggle={toggle}
         />
       </div>
       <div hidden={!showMenu} className='navbar-container-options-mobile'>
-        <NavbarLink
-          name={'About'}
-          className={'none'}
-          onClick={setShowMenuFalse}
-          path={aboutPath}
-        />
-        <NavbarLink
-          name={'Skills'}
-          className={'none'}
-          onClick={setShowMenuFalse}
-          path={skillsPath}
-        />
-        <NavbarLink
-          name={'Service'}
-          className={'none'}
-          onClick={setShowMenuFalse}
-          path={servicePath}
-        />
-        <NavbarLink
-          name={'Projects'}
-          className={'none'}
-          onClick={setShowMenuFalse}
-          path={projectsPath}
-        />
+        {
+          dataNavbarLinks && dataNavbarLinks.map((data, index) => {
+            return (
+              <NavbarLink
+                key={index + 1}
+                name={data.name}
+                className={'none'}
+                onClick={setShowMenuFalse}
+                path={data.path}
+              />
+            )
+          })
+        }
         <NavbarButton
           name={'Contact'}
           className={'none'}

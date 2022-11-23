@@ -1,7 +1,10 @@
+import { dataSkills, dataNavbarLinks, dataProjects } from './data'
 import Navbar from './components/Navbar'
 import Presentation from './components/Presentation'
 import About from './components/About'
 import Skills from './components/Skills'
+import Service from './components/Service'
+import Projects from './components/Projects'
 import imgHome from './media/images/developer.png'
 import imgSergio from './media/images/sergio.jpeg'
 import './App.css'
@@ -13,12 +16,9 @@ function App() {
     <div className="App">
       <Navbar
         nameLogo={'Sergio_Rodas'}
-        aboutPath={'#about'}
-        skillsPath={'#skills'}
-        servicePath={'#service'}
-        projectsPath={'#projects'}
         contactPath={'#contact'}
         homePath={'#home'}
+        dataNavbarLinks={dataNavbarLinks}
       />
       <Presentation
         titleJob={'FULL STACK DEVELOPER'}
@@ -39,7 +39,15 @@ function App() {
         aboutDescriptionSecondary={description}
       />
       <Skills
+        skillsTitle={'Skills'}
+        infoCards={dataSkills}
+      />
+      <Service
 
+      />
+      <Projects
+        dataProjects={dataProjects}
+        title={'Projects'}
       />
     </div>
   )
