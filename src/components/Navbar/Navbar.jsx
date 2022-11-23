@@ -1,22 +1,32 @@
+import NavbarMobile from './NavbarMobile'
+import NavbarDestokp from './NavbarDestokp'
 import './Navbar.css'
 
-function Navbar() {
-  return (
-    <div className='container-navbar'>
-      <header>
-        <nav className='navbar'>
-          <ul className='row navbar-info justify-content-between'>
-            <div className='col-6'>Sergio Rodas</div>
-            <div className='navbar-destokp'>
-              <li className='col-6'>About Me</li>
-              <li className='col-6'>Skills</li>
-              <li className='col-6'>Service</li>
-              <li className='col-6'>Projects</li>
-              <li className='col-6'>Contact</li>
-            </div>
-            <div className='navbar-mobile'>
+function Navbar({ nameLogo, aboutPath, skillsPath, servicePath,
+  projectsPath, contactPath, homePath }) {
 
-            </div>
+  return (
+    <div className='container-navbar' id='home'>
+      <header>
+        <nav className='navbar-content'>
+          <ul className='navbar-info'>
+            <NavbarDestokp
+              nameLogo={nameLogo}
+              aboutPath={aboutPath}
+              servicePath={servicePath}
+              skillsPath={skillsPath}
+              projectsPath={projectsPath}
+              contactPath={contactPath}
+              homePath={homePath}
+            />
+            <NavbarMobile
+              nameLogo={nameLogo}
+              aboutPath={aboutPath}
+              servicePath={servicePath}
+              skillsPath={skillsPath}
+              projectsPath={projectsPath}
+              contactPath={contactPath}
+            />
           </ul>
         </nav>
       </header>

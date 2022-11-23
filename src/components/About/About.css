@@ -1,0 +1,36 @@
+.about-container-background {
+  background-image: url('./../../media/images/waveAbout.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+  padding: 5rem 3rem;
+  margin-top: 4rem;
+}
+
+.about-container-profile {
+  padding-left: 3.7rem;
+}
+
+.about-border-profile {
+  padding: 5px;
+  border: 4px solid #FF731F;
+  border-radius: 50%;
+}
+
+.about-image-profile {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+.about-social-name {
+  color: white;
+  margin-top: 1rem;
+  padding-left: 0.3rem;
+}
+
+.about-social-links {
+  margin-top: 1.3rem;
+  padding-left: 0.6rem;
+}
