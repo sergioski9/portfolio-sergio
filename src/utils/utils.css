@@ -1,0 +1,14 @@
+.utils-border-marked {
+  padding: 2px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #FF731F;
+  border-radius: 50%;
+}
+
+.utils-background-marked {
+  background-color: #FF731F;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
