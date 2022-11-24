@@ -1,4 +1,5 @@
-import Wave from '../Wave'
+import Wave from './../Wave'
+import { Marked } from './../../utils'
 import ProjectsCard from './ProjectsCard'
 import './Projects.css'
 
@@ -8,7 +9,9 @@ function Projects({ dataProjects, title }) {
       <Wave>
         <div className='projects-container-card row justify-content-center align-items-center'>
           <div className='col-12 projects-container-title text-center'>
-            <h4 className='projects-title'>{title}</h4>
+            <h4 className='projects-title'>
+              <Marked />  {title}
+            </h4>
           </div>
           {
             dataProjects && dataProjects.map((data, index) => {
