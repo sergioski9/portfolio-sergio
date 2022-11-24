@@ -60,10 +60,19 @@
 }
 
 .navbar-logo-mobile {
+  transition: 0.4s;
+  text-decoration: none;
+  color: white;
   font-size: 1.4rem;
   font-weight: 600;
   margin: 0;
   margin-top: 0.3rem;
+}
+
+.navbar-logo-mobile:hover {
+  transition: 0.4s;
+  text-decoration: none;
+  color: #FF731F;
 }
 
 .navbar-color-symbol {
