@@ -7,7 +7,7 @@ function Skills({ skillsTitle, infoCards }) {
     <div className='skills-container text-center' id='skills'>
       <div className='skills-title'>
         <h4 className='skills-title-text'>
-          <Marked /> <span className='mx-3'>{skillsTitle}</span>
+          <Marked /> {skillsTitle}
         </h4>
       </div>
       <SkillsCard infoCards={infoCards} />
