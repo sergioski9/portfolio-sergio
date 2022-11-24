@@ -29,4 +29,35 @@ const categoryLevel = (level) => {
   if (level < 60 ) return 'Basic'
 }
 
-export { Marked, categoryLevel, BorderLinearProgress }
+const verifyLenghtText = (text) => {
+  if (text.length > 38) {
+    const result = text.slice(0, 38) + '...'
+    return result
+  } else {
+    return text
+  }
+}
+
+const effectSmoothieScroll = (selector) => {
+  const links = document.querySelectorAll(selector);
+
+  for (const link of links) {
+    link.addEventListener("click", clickHandler);
+  }
+
+  function clickHandler(e) {
+    e.preventDefault();
+    const href = this.getAttribute("href");
+    const offsetTop = document.querySelector(href).offsetTop;
+
+    window.scroll({
+      top: offsetTop,
+      behavior: "smooth"
+    })
+  }
+}
+
+export {
+  Marked, categoryLevel, BorderLinearProgress, verifyLenghtText,
+  effectSmoothieScroll
+}

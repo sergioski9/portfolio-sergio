@@ -1,0 +1,44 @@
+.service-container {
+  color: white;
+  margin-top: 8rem;
+  margin-bottom: 6rem;
+}
+
+/*---*/
+
+.service-title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.service-container-card {
+  padding: 3rem;
+}
+
+.service-card {
+  margin-top: 3.5rem;
+}
+
+.service-card-img {
+  padding: 1rem;
+  width: 100%;
+  height: 16rem;
+  margin: 2rem 0;
+}
+
+.service-card-title {
+  transition: 0.4s;
+  font-size: 1.6rem;
+  margin: 1.5rem 0;
+  color: #FF731F;
+  cursor: pointer;
+}
+
+.service-card-title:hover {
+  transition: 0.4s;
+  color: white;
+}
+
+.service-card-description {
+  color: rgb(176, 173, 173);
+}

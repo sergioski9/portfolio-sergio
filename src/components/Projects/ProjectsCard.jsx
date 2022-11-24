@@ -9,16 +9,16 @@ function ProjectsCard({ imgPath, titleProjects, descriptionProjects, url }) {
       <div className='projects-border-color'></div>
       <div className='projects-container-img'>
         <img
-          className='projects-img'
+          className='projects-card-img'
           src={imgPath}
-          alt="projects developer"
+          alt="Projects developer"
         />
       </div>
       <div className='projects-container-title'>
-        <h6 className='projects-title'>{titleProjects}</h6>
+        <h6 className='projects-card-title'>{titleProjects}</h6>
       </div>
       <div className='projects-container-description'>
-        <p className='projects-description'>{descriptionProjects}</p>
+        <p className='projects-card-description'>{descriptionProjects}</p>
       </div>
     </div>
   )

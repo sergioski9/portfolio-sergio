@@ -1,0 +1,36 @@
+.footer-container {
+  background-color: rgb(36, 44, 58);
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+.footer-container-text {
+  margin-top: 1rem;
+  color: rgb(176, 173, 173);
+}
+
+.footer-margin {
+  margin: 0 1rem;
+}
+
+.footer-text-author {
+  transition: 0.4s;
+  cursor: pointer;
+  color: #FF731F;
+  margin: 0 0.4rem;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.footer-text-author:hover {
+  text-decoration: none;
+  transition: 0.4s;
+  color: white;
+}
+
+.footer-border {
+  background-color: #FF731F;
+  width: 100%;
+  height: 6px;
+  margin: 0;
+}
