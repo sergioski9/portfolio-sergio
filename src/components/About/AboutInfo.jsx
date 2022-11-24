@@ -7,7 +7,7 @@ function AboutInfo({ aboutTitle, aboutSubTitle, aboutDescriptionPrimary,
   return (
     <div className='about-container-info col-12 col-md-8 col-lg-7'>
       <div className='about-title'>
-        <h3 id='about' className='about-title-text'>
+        <h3 className='about-title-text'>
           <Marked /> {aboutTitle}
         </h3>
       </div>

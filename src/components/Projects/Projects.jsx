@@ -7,10 +7,10 @@ function Projects({ dataProjects, title }) {
   return (
     <div className='projects-container' id='projects'>
       <Wave>
-        <div className='projects-container-card row justify-content-center align-items-center'>
+        <div className='projects-container-card row justify-content-center'>
           <div className='col-12 projects-container-title text-center'>
             <h4 className='projects-title'>
-              <Marked />  {title}
+              <Marked /> {title}
             </h4>
           </div>
           {

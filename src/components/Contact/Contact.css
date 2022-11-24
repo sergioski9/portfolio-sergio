@@ -1,0 +1,39 @@
+.contact-container {
+  padding: 3rem;
+  color: white;
+}
+
+.contact-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 4rem;
+}
+
+.contact-container-description {
+  padding: 0 3rem;
+  margin: 5rem 0;
+}
+
+.contact-description {
+  color: rgb(176, 173, 173);
+}
+
+.contact-links {
+  margin: 2rem 0;
+}
+
+.contact-links-text {
+  transition: 0.4s;
+  font-size: 1rem;
+  color: rgb(176, 173, 173);
+}
+
+.contact-links-text:hover {
+  transition: 0.4s;
+  cursor: pointer;
+  color: #FF731F;
+}
+
+.contact-links-text-margin {
+  margin: 0 1rem;
+}

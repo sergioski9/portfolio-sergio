@@ -1,1 +1,3 @@
-export { Marked, categoryLevel, BorderLinearProgress } from './utils'
+export { Marked, categoryLevel, BorderLinearProgress,
+  verifyLenghtText, effectSmoothieScroll
+} from './utils'
