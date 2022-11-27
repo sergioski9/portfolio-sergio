@@ -75,6 +75,7 @@ function ContactLink({ linkedinPath, githubPath, whatsappNumber, email }) {
       </div>
       <div className='contact-links col-12 col-md-5'>
         <h5
+          title='Copy Email'
           onClick={() => navigator.clipboard.writeText(email)}
           className='contact-links-text'
         >
