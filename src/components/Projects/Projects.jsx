@@ -3,7 +3,7 @@ import { Marked } from './../../utils'
 import ProjectsCard from './ProjectsCard'
 import './Projects.css'
 
-function Projects({ dataProjects, title }) {
+function Projects({ dataProjects, title, textHiddenTech }) {
   return (
     <div className='projects-container' id='projects'>
       <Wave>
@@ -22,6 +22,8 @@ function Projects({ dataProjects, title }) {
                   imgPath={data.imgPath}
                   titleProjects={data.title}
                   descriptionProjects={data.description}
+                  technologies={data.technologies}
+                  textHiddenTech={textHiddenTech}
                 />
               )
             })

@@ -5,7 +5,7 @@ import {
   aboutDescriptionPrimary, aboutDescriptionSecondary, skillsTitle, titleService,
   titleProjects, titleContact, descriptionContact, whatsappNumber,
   footerTextPrimary, footerTextSecond, footerAuthor, footerPath,
-  descriptionPresentation,
+  descriptionPresentation, textHiddenTech
 } from './../data'
 import Navbar from './../components/Navbar'
 import Presentation from './../components/Presentation'
@@ -56,6 +56,7 @@ function PageHome() {
       <Projects
         dataProjects={dataProjects}
         title={titleProjects}
+        textHiddenTech={textHiddenTech}
       />
       <Contact
         title={titleContact}

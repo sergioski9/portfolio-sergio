@@ -32,5 +32,6 @@ const dataProjects = [
 ]
 
 const titleProjects = 'Projects'
+const textHiddenTech = 'See technologies'
 
-export { dataProjects, titleProjects }
+export { dataProjects, titleProjects, textHiddenTech }
