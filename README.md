@@ -68,3 +68,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Developer Notes
+
+This is a portfolio which is completely `componentized` and `optimized` for use in different cases, if you want to modify something you just have to enter its component and its `css individually`, the `content` and all the words that appear on the `web page` are saved in the `folder data` and each of the components has specific data so if you want to `update` the content or add something you just have to go there and `modify` it. I hope it could help you

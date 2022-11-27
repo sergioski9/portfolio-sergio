@@ -1,5 +1,5 @@
 export { dataNavbarLinks, nameLogo, contactPath, homePath } from './dataNavbar'
-export { dataProjects, titleProjects } from './dataProjects'
+export { dataProjects, titleProjects, textHiddenTech } from './dataProjects'
 export { dataSkills, skillsTitle } from './dataSkills'
 export { dataService, titleService } from './dataService'
 export { email, githubPath, linkedinPath } from './data'

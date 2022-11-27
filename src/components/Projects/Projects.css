@@ -41,3 +41,15 @@
 .projects-card-description {
   color: rgb(176, 173, 173);
 }
+
+.projects-technology {
+  transition: 0.4s;
+  color: #FF731F;
+  margin-right: 0.6rem;
+  font-size: 1rem;
+}
+
+.projects-technology:hover {
+  transition: 0.4s;
+  color: white;
+}

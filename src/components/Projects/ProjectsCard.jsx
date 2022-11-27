@@ -1,6 +1,9 @@
+import ProjectsTechnology from './ProjectsTechnology'
 import './Projects.css'
 
-function ProjectsCard({ imgPath, titleProjects, descriptionProjects, url }) {
+function ProjectsCard({ imgPath, titleProjects, descriptionProjects, url,
+  technologies }) {
+
   return (
     <div
       onClick={() => window.open(url, '_blank')}
@@ -19,6 +22,18 @@ function ProjectsCard({ imgPath, titleProjects, descriptionProjects, url }) {
       </div>
       <div className='projects-container-description'>
         <p className='projects-card-description'>{descriptionProjects}</p>
+      </div>
+      <div className='projects-card-technologies'>
+        {
+          technologies && technologies.map((data, index) => {
+            return (
+              <ProjectsTechnology
+                key={index + 1}
+                technology={data}
+              />
+            )
+          })
+        }
       </div>
     </div>
   )
