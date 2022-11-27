@@ -1,4 +1,4 @@
-export const dataSkills = [
+const dataSkills = [
   {
     title: 'CSS',
     imageUrl: 'https://res.cloudinary.com/dgzbf6kp2/image/upload/v1669227250/development/CSS3_logo_djrrvd.png',
@@ -70,3 +70,7 @@ export const dataSkills = [
     level: 64
   }
 ]
+
+const skillsTitle = 'Skills'
+
+export { dataSkills, skillsTitle }

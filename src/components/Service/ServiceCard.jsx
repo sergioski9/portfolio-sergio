@@ -12,7 +12,14 @@ function ServiceCard({ imgPath, title, description, path }) {
       </div>
       <div className='service-container-title'>
         <h4
-          onClick={() => window.location.href = path}
+          onClick={() => {
+            const offsetTop = document.querySelector(path).offsetTop
+
+            window.scroll({
+              top: offsetTop,
+              behavior: "smooth"
+            })
+          }}
           className='service-card-title'
         >
           {title}
