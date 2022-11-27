@@ -5,3 +5,30 @@
   background: rgb(43, 52, 67);
   background: linear-gradient(90deg, rgba(43, 52, 67, 1) 0%, rgb(38, 53, 78) 50%, rgba(43, 52, 67, 1) 100%);
 }
+
+html::-webkit-scrollbar {
+  appearance: none;
+}
+
+html::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-button:increment,
+html::-webkit-scrollbar-button {
+  display: none;
+}
+
+html::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: rgb(43, 52, 67);
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
+}
+
+html::-webkit-scrollbar-track {
+  border-radius: 10px;
+}

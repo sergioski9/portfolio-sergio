@@ -1,6 +1,9 @@
+import { effectSmoothieScroll } from '../../utils'
 import './Navbar.css'
 
 function NavbarButton({ name, className, path, id, onClick}) {
+  effectSmoothieScroll('.navbar-link')
+
   return (
     <li
       onClick={() => onClick && onClick()}
