@@ -1,8 +1,8 @@
 import './About.css'
 
-function AboutSocialIcon({ onClick, children, title }) {
+function AboutSocialIcon({ onClick, children }) {
   return (
-    <div className='d-inline-block mx-2' title={title}>
+    <div className='d-inline-block mx-2'>
       <button
         onClick={() => onClick()}
         className='about-button-social'
