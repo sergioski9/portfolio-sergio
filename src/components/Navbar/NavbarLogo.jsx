@@ -6,7 +6,7 @@ const logoSymbolEnd = '>'
 
 function NavbarLogoDestokp({ name, path }) {
   return (
-    <div className='col-3'>
+    <div className='col-md-4 col-lg-4 col-xl-3'>
       <a href={path} className='navbar-logo'>
         <span className='navbar-color-symbol'>{logoSymbolInit} </span>
         {name}
