@@ -1,5 +1,5 @@
 .about-container-profile {
-  padding-left: 3.7rem;
+  padding-left: 1.5rem;
   margin: 0 auto;
 }
 
@@ -82,4 +82,8 @@
 .about-social-icons:hover {
   transition: 0.4s;
   color: var(--color-secondary);
+}
+
+.alert-dialog-icon-custom {
+  margin-right: 0.6rem;
 }
