@@ -8,21 +8,18 @@ import './Navbar.css'
 function NavbarMobile({ nameLogo, homePath, dataNavbarLinks, contactPath }) {
   const [showMenu, setShowMenu] = useState(false)
 
-  const toggle = () => {
-    setShowMenu(!showMenu)
-  }
-
-  const setShowMenuFalse = () => setShowMenu(false)
+  const toggle = () => setShowMenu(!showMenu)
 
   return (
     <div className='navbar-mobile'>
-      <div hidden={showMenu} className='navbar-container-logo-mobile row justify-content-between'>
+      <div className='navbar-container-logo-mobile row justify-content-between'>
         <NavbarLogoMobile
           name={nameLogo}
           path={homePath}
         />
         <NavbarLogoMenuMobile
           toggle={toggle}
+          showMenu={showMenu}
         />
       </div>
       <div hidden={!showMenu} className='navbar-container-options-mobile'>
@@ -33,7 +30,7 @@ function NavbarMobile({ nameLogo, homePath, dataNavbarLinks, contactPath }) {
                 key={index + 1}
                 name={data.name}
                 className={'none'}
-                onClick={setShowMenuFalse}
+                onClick={toggle}
                 path={data.path}
               />
             )
@@ -41,8 +38,8 @@ function NavbarMobile({ nameLogo, homePath, dataNavbarLinks, contactPath }) {
         }
         <NavbarButton
           name={'Contact'}
-          className={'none'}
-          onClick={setShowMenuFalse}
+          className={'navbar-link-contact-mobile-container'}
+          onClick={toggle}
           path={contactPath}
           id={'navbar-link-contact-mobile'}
         />

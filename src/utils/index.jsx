@@ -1,4 +1,4 @@
 export {
   Marked, categoryLevel, BorderLinearProgress, onClickDownloadCv,
-  verifyLenghtText, effectSmoothieScroll
+  verifyLenghtText, effectSmoothieScroll, changeBackground
 } from './utils'

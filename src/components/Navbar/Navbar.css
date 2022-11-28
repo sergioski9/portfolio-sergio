@@ -1,7 +1,16 @@
 .container-navbar {
+  transition: 0.4s;
+  position: sticky;
+  top: 0;
+  z-index: 100;
   color: var(--color-secondary);
   font-size: 1.2rem;
   width: 100%;
+}
+
+.navbar-bg {
+  transition: 0.4s;
+  background-color: var(--color-background-navbar-sticky);
 }
 
 .navbar-mobile {
@@ -107,6 +116,7 @@
     padding: 0;
     border: 1px solid var(--color-primary);
     border-radius: 0.2rem;
+    height: 100%;
   }
 
   .navbar-container-menu-mobile:hover {
@@ -120,6 +130,8 @@
   }
 
   .navbar-container-options-mobile {
+    margin-top: 1rem;
+    text-align: center;
     background-color: white;
     padding: 1rem 0rem;
   }
@@ -127,13 +139,18 @@
   #navbar-link-contact-mobile {
     transition: 0.4s;
     text-decoration: none;
-    color: var(--color-primary);
+    color: var(--color-secondary);
     border-radius: 1rem;
-    padding-left: 1rem;
+  }
+
+  .navbar-link-contact-mobile-container {
+    padding: 0.5rem;
+    background-color: var(--color-primary);
   }
 
   .navbar-menu-mobile-icon {
     transition: 0.4s;
+    margin-top: 0.3rem;
     color: var(--color-secondary);
   }
 

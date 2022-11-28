@@ -73,7 +73,15 @@ const onClickDownloadCv = () => {
   })
 }
 
+const changeBackground = (setShowNavbarBg) => {
+  if (window.scrollY >= 66) {
+    setShowNavbarBg(true)
+  } else {
+    setShowNavbarBg(false)
+  }
+}
+
 export {
   Marked, categoryLevel, BorderLinearProgress, verifyLenghtText, onClickDownloadCv,
-  effectSmoothieScroll
+  effectSmoothieScroll, changeBackground
 }
