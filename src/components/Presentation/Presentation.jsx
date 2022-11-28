@@ -5,7 +5,7 @@ function Presentation({ titleJob, name, description, textButton, imgPath }) {
   return (
     <article
       className='presentation-container row justify-content-between'
-      id='presentation'
+      id='home'
     >
       <PresentationInfo
         titleJob={titleJob}
