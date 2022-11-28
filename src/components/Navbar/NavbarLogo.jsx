@@ -33,7 +33,7 @@ function NavbarLogoMenuMobile({ toggle }) {
         onClick={() => toggle()}
         className='navbar-container-menu-mobile text-center'
       >
-        <GiHamburgerMenu size={'1rem'} color={'#FF731F'} />
+        <GiHamburgerMenu size={'1rem'} className='navbar-menu-mobile-icon' />
       </div>
     </div>
   )

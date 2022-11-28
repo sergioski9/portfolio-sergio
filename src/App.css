@@ -1,9 +1,18 @@
+:root {
+  --color-primary: #0096c7;
+  --color-secondary: rgb(249, 249, 249);
+  --color-text-content-secondary: rgb(184, 184, 184);
+  --color-wave: #33425B;
+  --color-web-bar-slider: #0077b6;
+  --color-background-primary: rgb(43, 52, 67);
+  --linear-gradient-background-primary: linear-gradient(90deg, rgba(43, 52, 67, 1) 0%, rgb(38, 53, 78) 50%, rgba(43, 52, 67, 1) 100%);
+}
+
 .App {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   width: 100%;
   min-height: 100vh;
-  background: rgb(43, 52, 67);
-  background: linear-gradient(90deg, rgba(43, 52, 67, 1) 0%, rgb(38, 53, 78) 50%, rgba(43, 52, 67, 1) 100%);
+  background: var(--color-background-primary) var(--linear-gradient-background-primary);
 }
 
 html::-webkit-scrollbar {
@@ -23,8 +32,10 @@ html::-webkit-scrollbar:horizontal {
   height: 10px;
 }
 
+/*--- Change the background-color for change the color in the slider bar ---*/
+
 html::-webkit-scrollbar-thumb {
-  background-color: rgb(43, 52, 67);
+  background-color: var(--color-web-bar-slider);
   border-radius: 20px;
   border: 2px solid #f1f2f3;
 }

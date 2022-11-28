@@ -1,6 +1,6 @@
 .projects-container {
   margin: 4rem 0;
-  color: white;
+  color: var(--color-secondary);
 }
 
 .projects-title {
@@ -23,7 +23,7 @@
 .projects-border-color {
   width: 100%;
   height: 5px;
-  background-color: #FF731F;
+  background-color: var(--color-primary);
 }
 
 .projects-card-img {
@@ -39,17 +39,17 @@
 }
 
 .projects-card-description {
-  color: rgb(176, 173, 173);
+  color: var(--color-text-content-secondary);
 }
 
 .projects-technology {
   transition: 0.4s;
-  color: #FF731F;
+  color: var(--color-primary);
   margin-right: 0.6rem;
   font-size: 1rem;
 }
 
 .projects-technology:hover {
   transition: 0.4s;
-  color: white;
+  color: var(--color-secondary);
 }

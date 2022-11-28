@@ -2,12 +2,12 @@
   padding: 2px;
   width: 14px;
   height: 14px;
-  border: 1px solid #FF731F;
+  border: 1px solid var(--color-primary);
   border-radius: 50%;
 }
 
 .utils-background-marked {
-  background-color: #FF731F;
+  background-color: var(--color-primary);
   width: 8px;
   height: 8px;
   border-radius: 50%;

@@ -18,46 +18,13 @@ function AboutProfile({ imgPath, name, email, githubPath, linkedinPath }) {
           onClick={() => navigator.clipboard.writeText(email)}
           title='Copy Email'
         >
-          <HiOutlineMail
-            size={'2.4rem'}
-            color={'#FF731F'}
-            onMouseOver={({ target }) => {
-              target.style.color = "white"
-              target.style.transition = "0.4s"
-            }}
-            onMouseOut={({ target }) => {
-              target.style.color = "#FF731F"
-              target.style.transition = "0.4s"
-            }}
-          />
+          <HiOutlineMail size={'2.4rem'} className='about-social-icons' />
         </AboutSocialIcon>
         <AboutSocialIcon onClick={() => window.open(githubPath, '_blank')}>
-          <FaGithub
-            size={'2rem'}
-            color={'#FF731F'}
-            onMouseOver={({ target }) => {
-              target.style.color = "white"
-              target.style.transition = "0.4s"
-            }}
-            onMouseOut={({ target }) => {
-              target.style.color = "#FF731F"
-              target.style.transition = "0.4s"
-            }}
-          />
+          <FaGithub size={'2rem'} className='about-social-icons' />
         </AboutSocialIcon>
         <AboutSocialIcon onClick={() => window.open(linkedinPath, '_blank')}>
-          <FaLinkedin
-            size={'2rem'}
-            color={'#FF731F'}
-            onMouseOver={({ target }) => {
-              target.style.color = "white"
-              target.style.transition = "0.4s"
-            }}
-            onMouseOut={({ target }) => {
-              target.style.color = "#FF731F"
-              target.style.transition = "0.4s"
-            }}
-          />
+          <FaLinkedin size={'2rem'} className='about-social-icons' />
         </AboutSocialIcon>
       </div>
     </div>
