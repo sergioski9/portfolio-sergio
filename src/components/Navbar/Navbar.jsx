@@ -13,7 +13,7 @@ function Navbar({ nameLogo, contactPath, homePath, dataNavbarLinks }) {
   }, [])
 
   return (
-    <div className={`container-navbar ${showNavbarBg ? 'navbar-bg' : ''}`} id='home'>
+    <div className={`container-navbar ${showNavbarBg ? 'navbar-bg' : ''}`}>
       <header>
         <nav className='navbar-content'>
           <ul className='navbar-info'>
