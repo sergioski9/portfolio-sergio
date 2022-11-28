@@ -1,4 +1,4 @@
-import { GiHamburgerMenu } from 'react-icons/gi'
+import { GiHamburgerMenu, GiCancel } from 'react-icons/gi'
 import './Navbar.css'
 
 const logoSymbolInit = '</'
@@ -26,14 +26,23 @@ function NavbarLogoMobile({ name, path }) {
   )
 }
 
-function NavbarLogoMenuMobile({ toggle }) {
+function NavbarLogoMenuMobile({ toggle, showMenu }) {
   return (
     <div className='d-inline-block col-2'>
       <div
         onClick={() => toggle()}
         className='navbar-container-menu-mobile text-center'
       >
-        <GiHamburgerMenu size={'1rem'} className='navbar-menu-mobile-icon' />
+        {
+          showMenu && (
+            <GiCancel size={'1.4rem'} className='navbar-menu-mobile-icon' />
+          )
+        }
+        {
+          !showMenu && (
+            <GiHamburgerMenu size={'1.4rem'} className='navbar-menu-mobile-icon' />
+          )
+        }
       </div>
     </div>
   )
