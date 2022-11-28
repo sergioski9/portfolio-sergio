@@ -9,27 +9,27 @@
 }
 
 .presentation-title-job {
-  color: #FF731F;
+  color: var(--color-primary);
   font-size: 1rem;
   font-weight: 600;
 }
 
 .presentation-name {
-  color: white;
+  color: var(--color-secondary);
   font-size: 2.3rem;
   font-weight: 600;
 }
 
 .presentation-description {
   padding-left: 0.2rem;
-  color: rgb(176, 173, 173);
+  color: var(--color-text-content-secondary);
 }
 
 .presentation-button-download-cv {
   margin-top: 1.3rem;
   transition: 0.4s;
-  color: white;
-  border: 2px solid #FF731F;
+  color: var(--color-secondary);
+  border: 2px solid var(--color-primary);
   border-radius: 1rem;
   background-color: transparent;
   padding: 0.7rem 1.7rem;
@@ -38,8 +38,8 @@
 
 .presentation-button-download-cv:hover {
   transition: 0.4s;
-  color: #FF731F;
-  border: 2px solid white;
+  color: var(--color-primary);
+  border: 2px solid var(--color-secondary);
 }
 
 .presentation-image {

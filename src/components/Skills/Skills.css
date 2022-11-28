@@ -1,6 +1,6 @@
 .skills-container {
   margin: 4rem 0;
-  color: white;
+  color: var(--color-secondary);
 }
 
 .skills-title-text {

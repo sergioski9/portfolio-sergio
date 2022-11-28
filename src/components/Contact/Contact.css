@@ -1,6 +1,6 @@
 .contact-container {
   padding: 3rem;
-  color: white;
+  color: var(--color-secondary);
 }
 
 .contact-title {
@@ -15,23 +15,34 @@
 }
 
 .contact-description {
-  color: rgb(176, 173, 173);
+  color: var(--color-text-content-secondary);
 }
 
 .contact-links {
   margin: 2rem 0;
+  transition: 0.4s;
+}
+
+.contact-links:hover .contact-links-icons {
+  transition: 0.4s;
+  color: var(--color-secondary);
+}
+
+.contact-links-icons {
+  transition: 0.4s;
+  color: var(--color-primary);
 }
 
 .contact-links-text {
   transition: 0.4s;
   font-size: 1rem;
-  color: rgb(176, 173, 173);
+  color: var(--color-text-content-secondary);
 }
 
 .contact-links-text:hover {
   transition: 0.4s;
   cursor: pointer;
-  color: #FF731F;
+  color: var(--color-primary);
 }
 
 .contact-links-text-margin {

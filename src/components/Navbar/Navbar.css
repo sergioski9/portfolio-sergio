@@ -1,5 +1,5 @@
 .container-navbar {
-  color: white;
+  color: var(--color-secondary);
   font-size: 1.2rem;
   width: 100%;
 }
@@ -21,33 +21,33 @@
 .nav-link {
   transition: 0.3s;
   text-decoration: none;
-  color: rgb(184, 184, 184);
+  color: var(--color-text-content-secondary);
 }
 
 .nav-link:hover {
   transition: 0.3s;
-  color: #FF731F;
+  color: var(--color-primary);
 }
 
 #navbar-link-contact {
   transition: 0.4s;
   text-decoration: none;
-  color: white;
-  border: 2px solid #FF731F;
+  color: var(--color-secondary);
+  border: 2px solid var(--color-primary);
   border-radius: 1rem;
   padding: 0.7rem 1.7rem;
 }
 
 #navbar-link-contact:hover {
   transition: 0.4s;
-  border: 2px solid white;
-  color: #FF731F;
+  border: 2px solid var(--color-secondary);
+  color: var(--color-primary);
 }
 
 .navbar-logo {
   transition: 0.4s;
   text-decoration: none;
-  color: white;
+  color: var(--color-secondary);
   font-size: 1.7rem;
   font-weight: 600;
   margin: 0;
@@ -56,13 +56,18 @@
 .navbar-logo:hover {
   transition: 0.4s;
   text-decoration: none;
-  color: #FF731F;
+  color: var(--color-primary);
+}
+
+.navbar-logo:hover .navbar-color-symbol {
+  transition: 0.4s;
+  color: var(--color-secondary);
 }
 
 .navbar-logo-mobile {
   transition: 0.4s;
   text-decoration: none;
-  color: white;
+  color: var(--color-secondary);
   font-size: 1.4rem;
   font-weight: 600;
   margin: 0;
@@ -72,11 +77,12 @@
 .navbar-logo-mobile:hover {
   transition: 0.4s;
   text-decoration: none;
-  color: #FF731F;
+  color: var(--color-primary);
 }
 
 .navbar-color-symbol {
-  color: #FF731F;
+  transition: 0.4s;
+  color: var(--color-primary);
 }
 
 .navbar-content {
@@ -99,25 +105,36 @@
   .navbar-container-menu-mobile {
     transition: 0.3s;
     padding: 0;
-    border: 1px solid #FF731F;
+    border: 1px solid var(--color-primary);
     border-radius: 0.2rem;
   }
 
   .navbar-container-menu-mobile:hover {
     transition: 0.3s;
-    border: 1px solid white;
+    border: 1px solid var(--color-secondary);
+  }
+
+  .navbar-container-menu-mobile:hover .navbar-menu-mobile-icon {
+    transition: 0.4s;
+    color: var(--color-primary);
   }
 
   .navbar-container-options-mobile {
-    background-color: rgb(241, 239, 239);
+    background-color: white;
+    padding: 1rem 0rem;
   }
 
   #navbar-link-contact-mobile {
     transition: 0.4s;
     text-decoration: none;
-    color: #FF731F;
+    color: var(--color-primary);
     border-radius: 1rem;
     padding-left: 1rem;
+  }
+
+  .navbar-menu-mobile-icon {
+    transition: 0.4s;
+    color: var(--color-secondary);
   }
 
   #navbar-link-contact-mobile:hover {

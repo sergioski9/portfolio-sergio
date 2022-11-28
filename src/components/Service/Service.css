@@ -1,5 +1,5 @@
 .service-container {
-  color: white;
+  color: var(--color-secondary);
   margin-top: 8rem;
   margin-bottom: 6rem;
 }
@@ -30,15 +30,15 @@
   transition: 0.4s;
   font-size: 1.6rem;
   margin: 1.5rem 0;
-  color: #FF731F;
+  color: var(--color-primary);
   cursor: pointer;
 }
 
 .service-card-title:hover {
   transition: 0.4s;
-  color: white;
+  color: var(--color-secondary);
 }
 
 .service-card-description {
-  color: rgb(176, 173, 173);
+  color: var(--color-text-content-secondary);
 }
