@@ -31,8 +31,8 @@ const categoryLevel = (level) => {
 }
 
 const verifyLenghtText = (text) => {
-  if (text.length > 38) {
-    const result = text.slice(0, 38) + '...'
+  if (text.length > 24) {
+    const result = text.slice(0, 22) + '...'
     return result
   } else {
     return text
