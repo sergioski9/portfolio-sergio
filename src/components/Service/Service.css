@@ -7,8 +7,15 @@
 /*---*/
 
 .service-title {
+  transition: 0.4s;
+  color: var(--color-secondary);
   font-size: 2rem;
   font-weight: 600;
+}
+
+.service-title:hover {
+  transition: 0.4s;
+  color: var(--color-primary);
 }
 
 .service-container-card {

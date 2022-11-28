@@ -4,8 +4,15 @@
 }
 
 .skills-title-text {
+  transition: 0.4s;
+  color: var(--color-secondary);
   font-size: 2.3rem;
   margin-bottom: 3rem;
+}
+
+.skills-title-text:hover {
+  transition: 0.4s;
+  color: var(--color-primary);
 }
 
 .skills-card-container {

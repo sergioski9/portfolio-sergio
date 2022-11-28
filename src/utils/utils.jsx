@@ -58,7 +58,22 @@ const effectSmoothieScroll = (selector) => {
   }
 }
 
+const onClickDownloadCv = () => {
+  // using Java Script method to get PDF file
+  fetch('CV.pdf').then(response => {
+    response.blob().then(blob => {
+      // Creating new object of PDF file
+      const fileURL = window.URL.createObjectURL(blob);
+      // Setting various property values
+      let alink = document.createElement('a');
+      alink.href = fileURL;
+      alink.download = 'CV.pdf';
+      alink.click();
+    })
+  })
+}
+
 export {
-  Marked, categoryLevel, BorderLinearProgress, verifyLenghtText,
+  Marked, categoryLevel, BorderLinearProgress, verifyLenghtText, onClickDownloadCv,
   effectSmoothieScroll
 }

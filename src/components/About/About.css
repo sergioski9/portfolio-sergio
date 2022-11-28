@@ -40,16 +40,28 @@
 }
 
 .about-title-text {
+  transition: 0.4s;
   color: var(--color-secondary);
   font-size: 1.6rem;
   font-weight: 600;
 }
 
+.about-title-text:hover {
+  transition: 0.4s;
+  color: var(--color-primary);
+}
+
 .about-sub-title-text {
+  transition: 0.4s;
   font-size: 1.2rem;
   margin: 1rem 0;
-  color: var(--color-secondary);
+  color: var(--color-primary);
   font-weight: 500;
+}
+
+.about-sub-title-text:hover {
+  transition: 0.4s;
+  color: var(--color-secondary);
 }
 
 .about-description-text {
