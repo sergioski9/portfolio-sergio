@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { effectSmoothieScroll } from './../../utils'
 import { GiHamburgerMenu, GiCancel } from 'react-icons/gi'
 import './Navbar.css'
@@ -6,7 +7,9 @@ const logoSymbolInit = '</'
 const logoSymbolEnd = '>'
 
 function NavbarLogoDestokp({ name, path }) {
-  effectSmoothieScroll('.navbar-logo')
+  useEffect(() => {
+    effectSmoothieScroll('.navbar-logo')
+  })
 
   return (
     <div className='col-md-4 col-lg-4 col-xl-3'>
@@ -20,7 +23,9 @@ function NavbarLogoDestokp({ name, path }) {
 }
 
 function NavbarLogoMobile({ name, path }) {
-  effectSmoothieScroll('.navbar-logo-mobile')
+  useEffect(() => {
+    effectSmoothieScroll('.navbar-logo-mobile')
+  })
 
   return (
     <a href={path} className='d-inline-block navbar-logo-mobile col-8'>

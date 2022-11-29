@@ -4,7 +4,7 @@ import './Service.css'
 
 function Service({ dataService, title }) {
   return (
-    <div className='service-container text-center' id='service'>
+    <section className='service-container text-center' id='service'>
       <div className='service-container-title'>
         <h4 className='service-title'>
           <Marked /> {title}
@@ -25,7 +25,7 @@ function Service({ dataService, title }) {
           })
         }
       </div>
-    </div>
+    </section>
   )
 }
 

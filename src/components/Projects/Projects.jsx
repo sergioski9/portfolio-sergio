@@ -5,7 +5,7 @@ import './Projects.css'
 
 function Projects({ dataProjects, title, textHiddenTech }) {
   return (
-    <div className='projects-container' id='projects'>
+    <section className='projects-container' id='projects'>
       <Wave>
         <div className='projects-container-card row justify-content-center'>
           <div className='col-12 projects-container-title text-center'>
@@ -30,7 +30,7 @@ function Projects({ dataProjects, title, textHiddenTech }) {
           }
         </div>
       </Wave>
-    </div>
+    </section>
   )
 }
 

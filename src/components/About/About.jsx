@@ -9,7 +9,7 @@ function About({ imgPath, email, linkedinPath, githubPath, nameProfile,
 
   return (
     <Wave>
-      <div className='row justify-content-center' id='about'>
+      <section className='row justify-content-center' id='about'>
         <AboutProfile
           imgPath={imgPath}
           githubPath={githubPath}
@@ -23,7 +23,7 @@ function About({ imgPath, email, linkedinPath, githubPath, nameProfile,
           aboutDescriptionPrimary={aboutDescriptionPrimary}
           aboutDescriptionSecondary={aboutDescriptionSecondary}
         />
-      </div>
+      </section>
     </Wave>
   )
 }

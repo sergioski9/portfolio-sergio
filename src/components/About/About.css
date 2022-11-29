@@ -83,7 +83,3 @@
   transition: 0.4s;
   color: var(--color-secondary);
 }
-
-.alert-dialog-icon-custom {
-  margin-right: 0.6rem;
-}
