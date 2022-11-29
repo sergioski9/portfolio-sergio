@@ -1,8 +1,11 @@
+import { useEffect } from 'react'
 import { effectSmoothieScroll } from './../../utils'
 import './Navbar.css'
 
 function NavbarLink({ name, path, className, id, onClick }) {
-  effectSmoothieScroll('.nav-link')
+  useEffect(() => {
+    effectSmoothieScroll('.nav-link')
+  })
 
   return (
     <li

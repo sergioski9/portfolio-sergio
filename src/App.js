@@ -3,9 +3,10 @@ import './App.css'
 
 function App() {
   return (
-    <div className="App">
+    <article className="App">
+      <div id='home' className='app-params-return-top'></div>
       <PageHome />
-    </div>
+    </article>
   )
 }
 

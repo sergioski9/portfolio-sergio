@@ -81,7 +81,30 @@ const changeBackground = (setShowNavbarBg) => {
   }
 }
 
+const navbarScrollBorder = (selector1, selector2) => {
+  const sections = document.querySelectorAll(selector1)
+  const navLinks = document.querySelectorAll(selector2)
+
+  window.onscroll = () => {
+    let current = ""
+
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop
+      if (window.scrollY >= sectionTop - 60) {
+        current = section.getAttribute("id")
+      }
+    })
+
+    navLinks.forEach((li) => {
+      li.classList.remove("active")
+      if (li.classList.contains(current)) {
+        li.classList.add("active")
+      }
+    })
+  }
+}
+
 export {
   Marked, categoryLevel, BorderLinearProgress, verifyLenghtText, onClickDownloadCv,
-  effectSmoothieScroll, changeBackground
+  effectSmoothieScroll, changeBackground, navbarScrollBorder
 }

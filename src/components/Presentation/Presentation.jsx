@@ -3,9 +3,9 @@ import './Presentation.css'
 
 function Presentation({ titleJob, name, description, textButton, imgPath }) {
   return (
-    <article
+    <section
       className='presentation-container row justify-content-between'
-      id='home'
+      id='presentation'
     >
       <PresentationInfo
         titleJob={titleJob}
@@ -20,7 +20,7 @@ function Presentation({ titleJob, name, description, textButton, imgPath }) {
           alt="developer"
         />
       </div>
-    </article>
+    </section>
   )
 }
 

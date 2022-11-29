@@ -1,10 +1,14 @@
-import React from 'react'
+import { useEffect } from 'react'
 import { NavbarLogoDestokp } from './NavbarLogo'
+import { navbarScrollBorder } from './../../utils'
 import NavbarButton from './NavbarButton'
 import NavbarLink from './NavbarLink'
 import './Navbar.css'
 
 function NavbarDestokp({ nameLogo, homePath, contactPath, dataNavbarLinks }) {
+  useEffect(() => {
+    navbarScrollBorder('section', 'li')
+  })
 
   return (
     <div className='navbar-destokp'>
@@ -20,7 +24,7 @@ function NavbarDestokp({ nameLogo, homePath, contactPath, dataNavbarLinks }) {
                 key={index + 1}
                 name={data.name}
                 path={data.path}
-                className={'col-1'}
+                className={`${data.path.slice(1)} col-1`}
               />
             )
           })

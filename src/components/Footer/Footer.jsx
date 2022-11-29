@@ -1,29 +1,20 @@
-import { effectSmoothieScroll } from './../../utils'
+import FooterInfo from './FooterInfo'
 import './Footer.css'
 
 function Footer({ footerTextPrimary, footerTextSecond, footerAuthor,
   footerPath }) {
-  effectSmoothieScroll('.footer-text-author')
-
   return (
-    <div id='footer'>
+    <section id='footer'>
       <div className='footer-container'>
-        <div className='footer-container-text text-center'>
-          <p className='footer-text'>
-            {footerTextPrimary}
-            <span className='footer-margin'>-</span>
-            {footerTextSecond}
-            <a
-              href={footerPath}
-              className='footer-text-author'
-            >
-              {footerAuthor}
-            </a>
-          </p>
-        </div>
+        <FooterInfo
+          footerTextPrimary={footerTextPrimary}
+          footerTextSecond={footerTextSecond}
+          footerAuthor={footerAuthor}
+          footerPath={footerPath}
+        />
       </div>
       <div className='footer-border'></div>
-    </div>
+    </section>
   )
 }
 
