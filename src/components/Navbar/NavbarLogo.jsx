@@ -22,13 +22,17 @@ function NavbarLogoDestokp({ name, path }) {
   )
 }
 
-function NavbarLogoMobile({ name, path }) {
+function NavbarLogoMobile({ name, path, toggle }) {
   useEffect(() => {
     effectSmoothieScroll('.navbar-logo-mobile')
   })
 
   return (
-    <a href={path} className='d-inline-block navbar-logo-mobile col-8'>
+    <a
+      onClick={() => toggle()}
+      href={path}
+      className='d-inline-block navbar-logo-mobile col-8'
+    >
       <span className='navbar-color-symbol'>{logoSymbolInit} </span>
       {name}
       <span className='navbar-color-symbol'> {logoSymbolEnd}</span>
@@ -43,16 +47,8 @@ function NavbarLogoMenuMobile({ toggle, showMenu }) {
         onClick={() => toggle()}
         className='navbar-container-menu-mobile text-center'
       >
-        {
-          showMenu && (
-            <GiCancel size={'1.4rem'} className='navbar-menu-mobile-icon' />
-          )
-        }
-        {
-          !showMenu && (
-            <GiHamburgerMenu size={'1.4rem'} className='navbar-menu-mobile-icon' />
-          )
-        }
+        {showMenu && <GiCancel size={'1.4rem'} className='navbar-menu-mobile-icon' />}
+        {!showMenu && <GiHamburgerMenu size={'1.4rem'} className='navbar-menu-mobile-icon' />}
       </div>
     </div>
   )
