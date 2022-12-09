@@ -9,6 +9,7 @@ function NavbarMobile({ nameLogo, homePath, dataNavbarLinks, contactPath }) {
   const [showMenu, setShowMenu] = useState(false)
 
   const toggle = () => setShowMenu(!showMenu)
+  const toggleHidden = () => setShowMenu(false)
 
   return (
     <div className='navbar-mobile'>
@@ -16,6 +17,7 @@ function NavbarMobile({ nameLogo, homePath, dataNavbarLinks, contactPath }) {
         <NavbarLogoMobile
           name={nameLogo}
           path={homePath}
+          toggle={toggleHidden}
         />
         <NavbarLogoMenuMobile
           toggle={toggle}

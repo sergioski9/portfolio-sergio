@@ -11,6 +11,11 @@ function ContactLink({ linkedinPath, githubPath, whatsappNumber, email }) {
 
   const handleClickOpen = () => setOpen(true)
   const handleClose = () => setOpen(false)
+  const onClickCopyEmail = () => {
+    navigator.clipboard.writeText(email)
+    handleClickOpen()
+    setTimeout(handleClose, '1000')
+  }
 
   return (
     <div className='contact-container-links row justify-content-center'>
@@ -26,19 +31,15 @@ function ContactLink({ linkedinPath, githubPath, whatsappNumber, email }) {
         <FaLinkedin size={'2rem'} className='contact-links-icons' />
         <ContactLinkText text={linkedinPath} />
       </ContactLinkFrame>
+      <ContactLinkFrame onClick={onClickCopyEmail}>
+        <HiOutlineMail size={'2rem'} className='contact-links-icons' />
+        <ContactLinkText text={email} />
+      </ContactLinkFrame>
       <ModalEmail
         open={open}
         handleClose={handleClose}
         email={email}
       />
-      <ContactLinkFrame onClick={() => {
-        navigator.clipboard.writeText(email)
-        handleClickOpen()
-        setTimeout(handleClose, '1000')
-      }}>
-        <HiOutlineMail size={'2rem'} className='contact-links-icons' />
-        <ContactLinkText text={email} />
-      </ContactLinkFrame>
     </div>
   )
 }
