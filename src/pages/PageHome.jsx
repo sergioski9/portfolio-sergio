@@ -8,6 +8,7 @@ import {
   descriptionPresentation, textHiddenTech
 } from './../data'
 import Navbar from './../components/Navbar'
+// import Mode from './../components/Mode'
 import Presentation from './../components/Presentation'
 import About from './../components/About'
 import Skills from './../components/Skills'
@@ -27,6 +28,7 @@ function PageHome() {
         homePath={homePath}
         dataNavbarLinks={dataNavbarLinks}
       />
+      {/* <Mode /> */}
       <Presentation
         titleJob={titleJob}
         name={namePresentation}

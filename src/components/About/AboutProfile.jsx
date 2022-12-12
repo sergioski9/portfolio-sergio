@@ -23,7 +23,12 @@ function AboutProfile({ imgPath, name, email, githubPath, linkedinPath }) {
         <h3>{name}</h3>
       </div>
       <div className='about-social-links'>
-        <ModalEmail open={open} handleClose={handleClose} email={email} />
+        <ModalEmail
+          open={open}
+          handleClose={handleClose}
+          email={email}
+          title={"Copied Email"}
+        />
         <AboutSocialIcon onClick={() => onClickCopyEmail() }>
           <HiOutlineMail size={'2.4rem'} className='about-social-icons' />
         </AboutSocialIcon>

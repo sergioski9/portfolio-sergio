@@ -5,7 +5,7 @@ import DialogTitle from '@mui/material/DialogTitle'
 import { GrStatusGood } from 'react-icons/gr'
 import './Modal.css'
 
-function ModalEmail({ open, handleClose, email }) {
+function ModalEmail({ open, handleClose, email, title }) {
   return (
     <div className='about-social-clipboard-message'>
       <Dialog
@@ -19,7 +19,7 @@ function ModalEmail({ open, handleClose, email }) {
             size={'2rem'}
             className='alert-dialog-icon-custom'
           />
-          {"Copied Email"}
+          {title}
         </DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
