@@ -39,6 +39,7 @@ function ContactLink({ linkedinPath, githubPath, whatsappNumber, email }) {
         open={open}
         handleClose={handleClose}
         email={email}
+        title={"Copied Email"}
       />
     </div>
   )

@@ -1,6 +1,6 @@
-import './utils.css'
-import { styled } from '@mui/material/styles'
 import LinearProgress, { linearProgressClasses } from '@mui/material/LinearProgress'
+import { styled } from '@mui/material/styles'
+import './utils.css'
 
 const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
   height: 6,
@@ -59,12 +59,9 @@ const effectSmoothieScroll = (selector) => {
 }
 
 const onClickDownloadCv = () => {
-  // using Java Script method to get PDF file
   fetch('CV.pdf').then(response => {
     response.blob().then(blob => {
-      // Creating new object of PDF file
       const fileURL = window.URL.createObjectURL(blob);
-      // Setting various property values
       let alink = document.createElement('a');
       alink.href = fileURL;
       alink.download = 'CV.pdf';
