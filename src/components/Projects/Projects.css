@@ -18,9 +18,9 @@
 
 .projects-card {
   margin: 4rem 2rem;
-  background-color: #404d65;
+  background-color: var(--color-background-card);
   border-radius: 1rem;
-  box-shadow: 0px 0px 6px #2c3649;
+  box-shadow: 0px 0px 6px var(--color-shadow-card);
 }
 
 .projects-card:hover {

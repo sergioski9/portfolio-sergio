@@ -1,4 +1,4 @@
-import { categoryLevel, BorderLinearProgress } from './../../utils';
+import { categoryLevel, BorderLinearProgress } from './../../utils'
 import './Skills.css'
 
 function SkillsCard({ title, imageUrl, level }) {

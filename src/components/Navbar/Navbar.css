@@ -141,7 +141,7 @@ li.active {
   .navbar-container-options-mobile {
     margin-top: 1rem;
     text-align: center;
-    background-color: white;
+    background-color: var(--color-background-navbar-mobile);
     padding: 1rem 0rem;
   }
 
