@@ -1,24 +1,35 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { BsFillSunFill, BsFillMoonStarsFill } from 'react-icons/bs'
+import { lightMode, darkMode } from './ModeUtils'
 import './Mode.css'
 
 function Mode() {
-  const setRoot = (key, value) => {
-    document.documentElement.style.setProperty(key, value)
-  }
+  const [ toggle, setToggle ] = useState(false)
 
-  const changeMode = () => {
-    setRoot('--color-primary', '#184e77')
-    setRoot('--color-secondary', '#f48c06')
-    setRoot('--color-text-content-secondary', 'rgb(184, 184, 184)')
-    setRoot('--color-wave', '#3a86ff')
-    setRoot('--color-background-primary', 'white')
-    setRoot('--linear-gradient-background-primary', 'white')
+  const changeToggle = () => setToggle(!toggle)
+
+  if (toggle) {
+    lightMode()
+  } else {
+    darkMode()
   }
 
   return (
-    <button onClick={() => changeMode()}>
-      dark mode
-    </button>
+    <div className='row justify-content-end'>
+      <div className='col-3 col-md-2 col-lg-1'>
+        <input
+          onChange={() => changeToggle()}
+          type="checkbox"
+          className="checkbox"
+          id="checkbox"
+        />
+        <label for="checkbox" className="label">
+          <BsFillSunFill className='fas fa-sun'  />
+          <BsFillMoonStarsFill className="fas fa-moon" />
+          <div className='ball'></div>
+        </label>
+      </div>
+    </div>
   )
 }
 

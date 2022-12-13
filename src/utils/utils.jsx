@@ -11,7 +11,7 @@ const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
   [`& .${linearProgressClasses.bar}`]: {
     borderRadius: 5,
     // Change the value (true) the operation ternary for the color in the progress bar
-    backgroundColor: theme.palette.mode === 'light' ? '#0096c7' : '#308fe8',
+    backgroundColor: theme.palette.mode === 'light' ? 'var(--color-primary)' : '#308fe8',
   },
 }))
 
