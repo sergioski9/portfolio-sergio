@@ -24,8 +24,8 @@ function Mode() {
           id="checkbox"
         />
         <label for="checkbox" className="label">
-          <BsFillSunFill className='fas fa-sun'  />
           <BsFillMoonStarsFill className="fas fa-moon" />
+          <BsFillSunFill className='fas fa-sun'  />
           <div className='ball'></div>
         </label>
       </div>
