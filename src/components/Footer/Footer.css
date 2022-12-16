@@ -14,7 +14,7 @@
 }
 
 .footer-text-author {
-  transition: 0.4s;
+  transition: 0.2s;
   cursor: pointer;
   color: var(--color-primary);
   margin: 0 0.4rem;
@@ -24,7 +24,7 @@
 
 .footer-text-author:hover {
   text-decoration: none;
-  transition: 0.4s;
+  transition: 0.2s;
   color: var(--color-secondary);
 }
 

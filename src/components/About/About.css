@@ -40,19 +40,19 @@
 }
 
 .about-title-text {
-  transition: 0.4s;
+  transition: 0.2s;
   color: var(--color-secondary);
   font-size: 1.6rem;
   font-weight: 600;
 }
 
 .about-title-text:hover {
-  transition: 0.4s;
+  transition: 0.2s;
   color: var(--color-primary);
 }
 
 .about-sub-title-text {
-  transition: 0.4s;
+  transition: 0.2s;
   font-size: 1.2rem;
   margin: 1rem 0;
   color: var(--color-primary);
@@ -60,7 +60,7 @@
 }
 
 .about-sub-title-text:hover {
-  transition: 0.4s;
+  transition: 0.2s;
   color: var(--color-secondary);
 }
 
@@ -75,11 +75,11 @@
 }
 
 .about-social-icons {
-  transition: 0.4s;
+  transition: 0.2s;
   color: var(--color-primary);
 }
 
 .about-social-icons:hover {
-  transition: 0.4s;
+  transition: 0.2s;
   color: var(--color-secondary);
 }

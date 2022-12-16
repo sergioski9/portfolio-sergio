@@ -7,14 +7,14 @@
 /*---*/
 
 .service-title {
-  transition: 0.4s;
+  transition: 0.2s;
   color: var(--color-secondary);
   font-size: 2rem;
   font-weight: 600;
 }
 
 .service-title:hover {
-  transition: 0.4s;
+  transition: 0.2s;
   color: var(--color-primary);
 }
 
@@ -34,7 +34,7 @@
 }
 
 .service-card-title {
-  transition: 0.4s;
+  transition: 0.2s;
   font-size: 1.6rem;
   margin: 1.5rem 0;
   color: var(--color-primary);
@@ -42,7 +42,7 @@
 }
 
 .service-card-title:hover {
-  transition: 0.4s;
+  transition: 0.2s;
   color: var(--color-secondary);
 }
 

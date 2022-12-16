@@ -15,19 +15,19 @@
 }
 
 .presentation-title-job:hover {
-  transition: 0.4s;
+  transition: 0.2s;
   color: var(--color-secondary);
 }
 
 .presentation-name {
-  transition: 0.4s;
+  transition: 0.2s;
   color: var(--color-secondary);
   font-size: 2.3rem;
   font-weight: 600;
 }
 
 .presentation-name:hover {
-  transition: 0.4s;
+  transition: 0.2s;
   color: var(--color-primary);
 }
 
@@ -38,7 +38,7 @@
 
 .presentation-button-download-cv {
   margin-top: 1.3rem;
-  transition: 0.4s;
+  transition: 0.2s;
   color: var(--color-secondary);
   border: 2px solid var(--color-primary);
   border-radius: 1rem;
@@ -48,7 +48,7 @@
 }
 
 .presentation-button-download-cv:hover {
-  transition: 0.4s;
+  transition: 0.2s;
   color: var(--color-primary);
   border: 2px solid var(--color-secondary);
 }

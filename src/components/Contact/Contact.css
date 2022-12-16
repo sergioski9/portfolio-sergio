@@ -4,7 +4,7 @@
 }
 
 .contact-title {
-  transition: 0.4s;
+  transition: 0.2s;
   color: var(--color-secondary);
   font-size: 2rem;
   font-weight: 600;
@@ -12,7 +12,7 @@
 }
 
 .contact-title:hover {
-  transition: 0.4s;
+  transition: 0.2s;
   color: var(--color-primary);
 }
 
@@ -27,27 +27,27 @@
 
 .contact-links {
   margin: 2rem 0;
-  transition: 0.4s;
+  transition: 0.2s;
 }
 
 .contact-links:hover .contact-links-icons {
-  transition: 0.4s;
+  transition: 0.2s;
   color: var(--color-secondary);
 }
 
 .contact-links-icons {
-  transition: 0.4s;
+  transition: 0.2s;
   color: var(--color-primary);
 }
 
 .contact-links-text {
-  transition: 0.4s;
+  transition: 0.2s;
   font-size: 1rem;
   color: var(--color-text-content-secondary);
 }
 
 .contact-links-text:hover {
-  transition: 0.4s;
+  transition: 0.2s;
   cursor: pointer;
   color: var(--color-primary);
 }
